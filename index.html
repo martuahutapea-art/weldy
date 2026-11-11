@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Friends? 💗</title>
+
+    <style>
+
+.identitas {
+    background: white;
+    width: 85%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #eab9d0;
+    line-height: 2;
+}
+
+.identitas h1 {
+    color: #e45b94;
+}
+
+.identitas h2 {
+    color: #bd6a91;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe1ec, #fceaff);
+            color: #9b456d;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 70px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 25px auto;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 25px;
+            box-shadow: 0 5px 20px #eab9d0;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .heart {
+            font-size: 50px;
+            margin: 20px;
+            animation: denyut 1s infinite;
+        }
+
+        @keyframes denyut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            background: #ed82ad;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #d6538b;
+            transform: scale(1.05);
+        }
+
+        #surat, #kejutan {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background: #fff0f6;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        footer {
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .floating {
+            position: fixed;
+            bottom: -30px;
+            font-size: 20px;
+            animation: naik 5s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes naik {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="identitas">
+    <p>💌 A Little Message For</p>
+    <h1>kania</h1>
+
+    <p>From</p>
+    <h2>martua</h2>
+</div>
+
+
+    <header>
+        <h1>Just Friends? 💗</h1>
+        <p>Welcome to my little website!</p>
+        <div class="heart">♡</div>
+        <p>Ada sesuatu yang ingin aku sampaikan...</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Hai, manusia favorit! 🌷</h2>
+
+        <p>
+            Aku cuma mau bilang kalau kehadiran kamu
+            ternyata bisa membuat hari biasa menjadi
+            sedikit lebih menyenangkan.
+        </p>
+
+        <button onclick="bukaSurat()">
+            Buka Surat 💌
+        </button>
+
+        <div id="surat">
+            <h2>Dear You ♡</h2>
+
+            <p>
+                Entah kenapa, ngobrol sama kamu
+                nggak pernah terasa membosankan.
+
+                <br><br>
+
+                Kadang kamu ngeselin, kadang bikin
+                ketawa sendiri, tapi tetap saja
+                kamu jadi salah satu orang yang
+                aku tunggu kabarnya.
+
+                <br><br>
+
+                Jangan berubah jadi orang asing, ya.
+                Aku masih mau berbagi banyak cerita
+                sama kamu. 💗
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h2>Sebenarnya Kita Ini Apa? 🤔</h2>
+
+        <p>
+            Teman biasa atau teman yang agak luar biasa?
+        </p>
+
+        <button onclick="kejutan()">
+            Cari Tahu 🤭
+        </button>
+
+        <div id="kejutan">
+            <h2>Hmmmm... 💕</h2>
+
+            <p>
+                Statusnya memang teman,
+                tapi perlakuannya kadang
+                bikin salah tingkah sendiri.
+                
+                <br><br>
+
+                Sudahlah, jalani saja dulu.
+                Yang penting jangan sampai asing.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container section">
+
+        <h2>Satu Pesan Lagi 💗</h2>
+
+        <p>
+            Terima kasih sudah menjadi bagian
+            dari hari-hariku.
+
+            <br><br>
+
+            Semoga kita tetap bisa tertawa,
+            bercerita, dan saling menemani
+            dalam waktu yang lama.
+        </p>
+
+        <div class="heart">♡</div>
+
+        <h3>You're Special! ✨</h3>
+
+    </div>
+
+    <footer>
+        <p>Made with ♡</p>
+        <p>Just Friends? Who Knows. 🤭</p>
+    </footer>
+
+    <script>
+
+        function bukaSurat() {
+            let surat = document.getElementById("surat");
+
+            if (surat.style.display === "block") {
+                surat.style.display = "none";
+            } else {
+                surat.style.display = "block";
+            }
+        }
+
+        function kejutan() {
+            let kejutan = document.getElementById("kejutan");
+
+            if (kejutan.style.display === "block") {
+                kejutan.style.display = "none";
+            } else {
+                kejutan.style.display = "block";
+            }
+        }
+
+        function buatHati() {
+            let hati = document.createElement("div");
+
+            hati.className = "floating";
+            hati.innerHTML = ["♡", "💗", "✨", "💕"][
+                Math.floor(Math.random() * 4)
+            ];
+
+            hati.style.left = Math.random() * 100 + "vw";
+            hati.style.animationDuration =
+                (Math.random() * 3 + 3) + "s";
+
+            document.body.appendChild(hati);
+
+            setTimeout(() => {
+                hati.remove();
+            }, 6000);
+        }
+
+        setInterval(buatHati, 700);
+
+    </script>
+
+</body>
+</html>
